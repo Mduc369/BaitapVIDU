@@ -15,6 +15,8 @@ int main() {
     display(5, 15, 25);     // Không lấy mặc định -> In: a: 5, b: 15, c: 25
     return 0;
 }
+
+
 Biến tham chiếu (Reference Variables)
 Biến tham chiếu đóng vai trò là một bí danh (alias) cho một biến đã tồn tại. Mọi thay đổi trên biến tham chiếu đều trực tiếp làm thay đổi giá trị của biến gốc.
 Đặc điểm:
@@ -39,7 +41,9 @@ int main() {
     std::cout << "num1: " << num1 << ", num2: " << num2 << std::endl; // In out: 10, 5
     return 0;
 }
-Chồng hàm (Function Overloading)
+
+
+Chồng hàm 
 Cho phép định nghĩa nhiều hàm cùng tên trong cùng một phạm vi, miễn là chúng khác nhau về số lượng tham số hoặc kiểu dữ liệu của tham số. Trình biên dịch sẽ tự động chọn đúng hàm dựa vào đối số truyền vào.
 Lưu ý: Không thể nạp chồng hàm nếu các hàm chỉ khác nhau ở kiểu trả về.
 Ví dụ:
@@ -62,7 +66,9 @@ int main() {
     std::cout << "HT: " << area(3.0) << std::endl;       // Gọi area(double)
     return 0;
 }
-Chồng toán tử (Operator Overloading)
+
+
+Chồng toán tử 
 Cho phép tái định nghĩa hành vi của các toán tử có sẵn trong C++ (như +, -, *, ==, <<,...) khi áp dụng trên các kiểu dữ liệu do người dùng tự định nghĩa (như struct hoặc class).
 Ví dụ:
 #include <iostream>
@@ -88,6 +94,7 @@ int main() {
 
 
 Các ví dụ về bài tập cụ thể 
+
 Ví Dụ 1
 #include<iostream.h>
 class Dagiac {
