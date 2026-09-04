@@ -1,64 +1,66 @@
-Bài 401
+Các ví dụ về mở rộng trong C++
+
+Ví Dụ 1
 #include<iostream.h>
 class Dagiac {
-    protected: 
-         int Day, Cao;
-    public:
-       void GanGiaTri(int a, int b)  {
-           Day=a;
-           Cao=b;
-           }
-    };
+protected: 
+int Day, Cao;
+public:
+void GanGiaTri(int a, int b)  {
+Day=a;
+Cao=b;
+}
+};
 class Tamgiac:public Dagiac {
-    public:
-         int Dientich(void) {
-             return Day*Cao/2;
-             }
-     };
+public:
+int Dientich(void) {
+return Day*Cao/2;
+}
+};
 class Hcn:public Dagiac {
-   public:
-        int Dientich(void) {
-            return Day*Cao;
-            }
-    };
+public:
+int Dientich(void) {
+return Day*Cao;
+}
+};
 void main() {
-    Tamgiac A;
-    Hcn B;
-    A.GanGiaTri(4,5);
-    B.GanGiaTri(4,5);
-    cout<<A.Diẹntich()<<endl<<B.Dientich()<<endl;
-    }
+Tamgiac A;
+Hcn B;
+A.GanGiaTri(4,5);
+B.GanGiaTri(4,5);
+cout<<A.Diẹntich()<<endl<<B.Dientich()<<endl;
+}
 
 
-Bài 402
+Ví dụ 2
 #include<iostream.h>
 class A {
-    public:
-         A(){
-             cout<<"A: khong tham so \n";
-             }
-         A(int a) {
-             cout<<"A: tham so kieu int \n";
-             }
+public:
+A(){
+cout<<"A: khong tham so \n";
+}
+A(int a) {
+cout<<"A: tham so kieu int \n";
+}
 };
 class B:public A{
-    public:
-        B(int a) {
-            cout<<"B: tham so kieu int \n"
-            }
+public:
+B(int a) {
+cout<<"B: tham so kieu int \n"
+}
 };
 class C:public A{
-    public:
-        C(int a) {
-            cout<<"C: tham so kieu int \n";
-            }
+public:
+C(int a) {
+cout<<"C: tham so kieu int \n";
+}
 void main () {
 B b1(1);
 C c1(1);
 }
 
 
-Bài 403 
+Ví dụ 3
 #include<iosteam.h>
 class Dagiac {
 protected:
@@ -98,44 +100,44 @@ A.In(A.Dientich());
 B.In(B.Dientich());
 }
 
-  Bài 404
-  #include<iostream.h>
-  class Dagiac {
-  protected:
-  int Day, Cao;
-  public:
-  void GanGiaTri(int a, int b) {
-  Day=a;
-  Cao=b;
-  }
-  };
-  class Hcn:public Dagiac{
-  public;
-  int Dientich(void) {
-  cout<<"Dien tich hinh chu nhat la: ";
-  return (Day*cao);
-  }
-  };
-  class Tamgiac:public Dagiac {
-  public:
-  int Dientich(void) {
-  cout<<"Dien tich tam giac la: ";
-  return (Day*Cao/2);
-  }
-  };
-  void main(){
-  Tamgiac T;
-  Hcn H;
-  Dagiac *D1=&H;
-  Dagiac *D2=&T;
-  D1->GanGiatri(4,5);
-  D2->GanGiaTri(4,5);
-  cout<<H.Dientich()<<endl;
-  cout<<T>Dientich()<<endl;
-  }
+Ví dụ 4
+#include<iostream.h>
+class Dagiac {
+protected:
+int Day, Cao;
+public:
+void GanGiaTri(int a, int b) {
+Day=a;
+Cao=b;
+}
+};
+class Hcn:public Dagiac{
+public;
+int Dientich(void) {
+cout<<"Dien tich hinh chu nhat la: ";
+return (Day*cao);
+}
+};
+class Tamgiac:public Dagiac {
+public:
+int Dientich(void) {
+cout<<"Dien tich tam giac la: ";
+return (Day*Cao/2);
+}
+};
+void main(){
+Tamgiac T;
+Hcn H;
+Dagiac *D1=&H;
+Dagiac *D2=&T;
+D1->GanGiatri(4,5);
+D2->GanGiaTri(4,5);
+cout<<H.Dientich()<<endl;
+cout<<T>Dientich()<<endl;
+}
 
 
-Bài 405
+Ví dụ 5
 #include<iostream.h>
 class Dagiac {
 protected: 
@@ -180,7 +182,7 @@ cout<<D3->Dientich()<<endl;
 }
 
 
-Bài 406
+Ví dụ 6
 #include<iostream.h>
 class Dagiac {
 protected:
@@ -218,7 +220,7 @@ cout<D2->Dientich()<<endl;
 }
 
 
-Bài 407
+Ví dụ 7
 #include<iostream.h>
 #include<conio.h>
 class Dagiac {
